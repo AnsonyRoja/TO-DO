@@ -1,0 +1,33 @@
+.task {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.task .completed {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.task:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+    /* Escalar un poco al pasar el ratón sobre la tarea */
+}
+
+
+span {
+    display: block;
+    width: 17rem;
+    overflow: hidden;
+    font-size: 20px;
+}

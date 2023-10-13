@@ -1,0 +1,12 @@
+<div class="todo-list">
+    <h1 class="title">Lista de Tareas</h1>
+    <input [(ngModel)]="newTodoText" (keyup.enter)="addTodo()" placeholder="Nueva tarea" class="input" />
+    <button (click)="addTodo()" class="add-button">Agregar</button>
+    <p *ngIf="todos.length === 0" class="no-tasks">No hay tareas pendientes</p>
+    <ul>
+        <li *ngFor="let todo of todos">
+            <todo-item [todo]="todo"></todo-item>
+        </li>
+    </ul>
+
+</div>
